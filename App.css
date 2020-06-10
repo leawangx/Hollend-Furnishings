@@ -1,0 +1,272 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+.App {
+  background-image: linear-gradient(to right, #0B345C,#0f1622);
+}
+
+/* -----------Nav Bar----------- */
+.Nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-image: linear-gradient(to right, #0B345C,#0f1622);
+  position: fixed;
+  width: 100%;
+  top:0;
+  z-index: 100;
+}
+
+.Nav-logo {
+  color: white;
+  font-size: 1.5em;
+  padding-left: 50px;
+}
+
+.Nav-user {
+  color: white;
+  font-size: 1.5em;
+  padding-right: 50px;
+}
+
+.Nav-icon {
+  padding-right: 15px;
+}
+
+/* -----------filter----------- */
+.Filter {
+  margin: 58px 30px 10px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Filter-type {
+  margin-right: 20px;
+}
+
+.Filter-price {
+  margin-left: 20px;
+}
+
+/* -----------Products----------- */
+.ProductsTable-wrapper {
+  margin: 0px 20px;
+}
+
+.ProductsTable {
+  /* margin-top: 58px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Product-card {
+  margin: 10px 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.Product-card-img {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.Product-card-img:hover .img-overlay{
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.img {
+  width:90%;
+  height: 90%;
+}
+
+.img-overlay {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  opacity: 0;
+}
+
+.button-icon-view {
+  color: #0B345C;
+  font-size: 2.2em;
+  margin: 5px 5px 5px 20px;
+}
+
+.button-icon-view:hover {
+  color: pink;
+  font-size: 2.2em;
+  margin: 5px 5px 5px 20px;
+}
+
+.button-icon-highlight {
+  color: pink;
+  font-size: 2.2em;
+  margin: 5px 5px 5px 20px;
+}
+
+.Product-card-text-type {
+  background-color: #0B345C;
+  border-radius: 10px;
+  width: min-content;
+  margin-left: 20px;
+}
+
+.Product-card-text-type-p {
+  color: white;
+  margin: 0px 15px;
+}
+
+.Product-card-text {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 20px;
+}
+
+.Product-card-text-name {
+  font-size: 1em;
+  font-weight: 800;
+}
+
+.Product-card-text-price {
+  font-size: 1em;
+  font-weight: 800;
+}
+
+.Product-card-MFG {
+  margin: 0px 20px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+/* -----------PopUp----------- */
+.popup {
+  border: 2px solid #0B345C;
+}
+
+.modal {
+  font-size: 1em;
+  margin: 30px;
+}
+
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 5px 5px 5px 5px;
+  line-height: 20px;
+  right: 20px;
+  top: 20px;
+  font-size: 40px;
+  color: white;
+  border-radius: 30px;
+  border: 2px solid #0B345C;
+  background-color: #0B345C;
+}
+
+.modal > .header {
+  width: 100%;
+  margin: auto;
+  border-bottom: 2px solid #0B345C;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  color: #0B345C;
+  padding: 3px;
+}
+
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+.modal > .content > .content-img-wrapper {
+}
+
+.title-wrapper {
+  display: flex;
+}
+
+.product-name {
+  width: min-content;
+  font-size: 1em;
+  color: #0B345C;
+  font-weight: 900;
+}
+
+.title-type-wrapper {
+  background-color: #0B345C;
+  border-radius: 20px;
+  width: min-content;
+  height: 90%;
+  margin-left: 20px;
+  margin-top: 2.5%;
+}
+
+.title-type {
+  color: white;
+  margin: 0px 15px;
+  font-size: 1em;
+}
+
+.modal > .content > .content-img-wrapper > .content-img {
+  width:100%;
+  margin: auto;
+}
+
+.content-description-wrapper {
+  margin: 0px 10px;
+  border-left: 2px dashed #eee;
+  border-right: 2px dashed #eee;
+}
+
+.content-description-title {
+  margin: 0px 10px;
+  color: #0B345C;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.content-description {
+  margin: 0px 10px;
+  color: #0B345C;
+  font-size: 1em;
+}
+
+.content-choice-title {
+  color: #0B345C;
+  font-size: 1.5em;
+  font-weight: 900;
+  margin: 0px;
+}
+
+.add {
+  display: grid;
+  justify-content: center;
+}
+
+.button-icon-sc {
+  color: #0B345C;
+  font-size: 2.2em;
+}
+
+.button-icon-sc:hover {
+  color: pink;
+  font-size: 2.2em;
+}
